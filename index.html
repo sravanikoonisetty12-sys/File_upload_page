@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>File Upload</title>
+
+<link rel="stylesheet" href="index.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+<div class="sidebar">
+
+    <div class="logo">
+        Nexus.Client
+    </div>
+
+    <div class="profile">
+        <div class="avatar">A</div>
+
+        <div>
+            <h4>Alex</h4>
+            <p>Acme Corporation</p>
+        </div>
+    </div>
+
+    <ul class="menu">
+
+        <li>
+            <a href="#">
+                <i class="fa-solid fa-gauge"></i>
+                Dashboard
+            </a>
+        </li>
+
+        <li>
+            <a href="#">
+                <i class="fa-solid fa-pen"></i>
+                Submit Request
+            </a>
+        </li>
+
+        <li class="active">
+            <a href="#">
+                <i class="fa-solid fa-upload"></i>
+                File Upload
+            </a>
+        </li>
+
+        <li>
+            <a href="#">
+                <i class="fa-solid fa-file-invoice"></i>
+                Invoices
+            </a>
+        </li>
+
+        <li>
+            <a href="#">
+                <i class="fa-solid fa-credit-card"></i>
+                Payments
+            </a>
+        </li>
+
+    </ul>
+
+    <div class="logout">
+        <a href="#">
+            <i class="fa-solid fa-right-from-bracket"></i>
+            Sign Out
+        </a>
+    </div>
+
+</div>
+
+<div class="main-content">
+
+    <h1>File Upload</h1>
+
+    <p class="subtitle">
+        Upload documents, images, and other files to share with our team.
+    </p>
+
+    <div class="top-section">
+
+        <div class="upload-card">
+
+            <h3>
+                <i class="fa-solid fa-cloud-arrow-up"></i>
+                Upload Files
+            </h3>
+
+            <div class="upload-box">
+
+                <i class="fa-solid fa-cloud-arrow-up upload-icon"></i>
+
+                <h4>Drag & Drop Files Here</h4>
+
+                <p>or click to browse</p>
+
+                <input type="file">
+                <input type="file" id="fileInput" multiple>
+
+<table>
+    <tbody id="fileTable"></tbody>
+</table>
+
+            </div>
+
+            <input type="file" id="fileInput" multiple>
+
+<button type="button" class="upload-btn">
+    Upload
+</button>
+
+<button type="button" class="clear-btn">
+    Clear
+</button>
+
+<table>
+    <tbody id="fileTable"></tbody>
+</table>
+
+        </div>
+
+        <div class="right-panel">
+
+            <div class="card">
+
+                <h3>Storage Used</h3>
+
+                <p>21.4 MB / 500 MB</p>
+
+                <div class="progress">
+                    <div class="progress-fill"></div>
+                </div>
+
+                <small>478.6 MB Remaining</small>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Accepted Formats</h3>
+
+                <div class="formats">
+                    <span>PDF</span>
+                    <span>JPG</span>
+                    <span>PNG</span>
+                    <span>SVG</span>
+                    <span>DOCX</span>
+                    <span>XLSX</span>
+                    <span>ZIP</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="table-card">
+
+        <h3>Uploaded Files</h3>
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th>File</th>
+                    <th>Type</th>
+                    <th>Size</th>
+                    <th>Uploaded</th>
+                </tr>
+            </thead>
+            
+
+            <tbody>
+
+               <tr>
+    <td>
+        <i class="fa-solid fa-file-pdf pdf-icon"></i>
+        Brand_Guidelines.pdf
+    </td>
+    <td>PDF</td>
+    <td>2.4 MB</td>
+    <td>Today</td>
+</tr>
+
+<tr>
+    <td>
+        <i class="fa-solid fa-file-image image-icon"></i>
+        Homepage_Mockup.png
+    </td>
+    <td>PNG</td>
+    <td>5.2 MB</td>
+    <td>Today</td>
+</tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</div>
+<script src="script.js"></script>
+
+</body>
+</html>
